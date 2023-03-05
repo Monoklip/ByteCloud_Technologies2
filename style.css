@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 20px;
+}
+.world {
+    width: 1280px;
+    height: 720px;
+    background: url('./image/map.png');
+    position: relative;
+}
+
+.world-north_USA-peoples {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 275px;
+    left: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.man-min {
+    height: 30px;
+    cursor: pointer;
+}
+
+.man-mid {
+    height: 45px;
+    cursor: pointer;
+}
+
+.man-max {
+    height: 60px;
+    cursor: pointer;
+}
+
+.world-north_USA-devices {
+    width: 150px;
+    height: 150px;
+    top: 225px;
+    left: 225px;
+    position: absolute;
+    display: none;
+}
+
+.phone-north_USA {
+    position: absolute;
+    height: 40px;
+    top: 50px;
+    display: none;
+}
+
+.tablet-north_USA {
+    position: absolute;
+    height: 40px;
+    top: 80px;
+    left: 50px;
+    display: none;
+}
+
+.laptop-north_USA {
+    position: absolute;
+    height: 40px;
+    top: 50px;
+    left: 100px;
+    display: none;
+}
+
+/* ================================ */
+
+.world-south_USA-peoples {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 500px;
+    left: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.world-south_USA-devices {
+    width: 150px;
+    height: 150px;
+    top: 460px;
+    left: 325px;
+    position: absolute;
+    display: none;
+}
+
+.phone-south_USA {
+    position: absolute;
+    height: 40px;
+    left: 35px;
+    display: none;
+}
+
+.tablet-south_USA {
+    position: absolute;
+    height: 40px;
+    left: 55px;
+    bottom: 0;
+    display: none;
+}
+
+.laptop-south_USA {
+    position: absolute;
+    height: 40px;
+    top: 50px;
+    left: 100px;
+    display: none;
+}
+
+/* =====================================*/
+
+.world-Europe-peoples {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.world-Europe-devices {
+    width: 233px;
+    height: 150px;
+    top: 218px;
+    left: 581px;
+    position: absolute;
+    display: none;
+}
+
+.phone-Europe {
+    position: absolute;
+    height: 40px;
+    left: 165px;
+    display: none;
+}
+
+.tablet-Europe {
+    position: absolute;
+    height: 40px;
+    bottom: 15px;
+    display: none;
+}
+
+.laptop-Europe {
+    position: absolute;
+    height: 40px;
+    top: 55px;
+    left: 100px;
+    display: none;
+}
+
+/* =====================================*/
+
+.world-Asia-peoples {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 350px;
+    left: 940px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.world-Asia-devices {
+    width: 233px;
+    height: 150px;
+    top: 275px;
+    left: 855px;
+    position: absolute;
+    display: none;
+}
+
+.phone-Asia {
+    position: absolute;
+    height: 40px;
+    left: 170px;
+    top: 10px;
+    display: none;
+}
+
+.tablet-Asia {
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    display: none;
+}
+
+.laptop-Asia {
+    position: absolute;
+    height: 40px;
+    top: 90px;
+    left: 120px;
+    display: none;
+}
+
+/* =====================================*/
+
+.world-Australia-peoples {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 535px;
+    left: 1040px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.world-Australia-devices {
+    width: 130px;
+    height: 100px;
+    top: 525px;
+    left: 1000px;
+    position: absolute;
+    display: none;
+}
+
+.phone-Australia {
+    position: absolute;
+    height: 40px;
+    left: 90px;
+    top: 38px;
+    display: none;
+}
+
+.tablet-Australia {
+    position: absolute;
+    height: 40px;
+    top: 40px;
+    left: 5px;
+    display: none;
+}
+
+.laptop-Australia {
+    position: absolute;
+    height: 40px;
+    top: 40px;
+    left: 47px;
+    display: none;
+}
+
+/* =================================== */
+
+.ball {
+    width: 40px;
+}
+
+.ball-WestUSA {
+    position: absolute;
+    top: 320px;
+    left: 170px;
+    display: none;
+}
+
+.ball-EastUSA {
+    position: absolute;
+    top: 300px;
+    left: 360px;
+    display: none;
+}
+
+.ball-Germany {
+    position: absolute;
+    top: 275px;
+    left: 615px;
+    display: none;
+}
+
+.ball-Singapore {
+    position: absolute;
+    top: 485px;
+    left: 960px;
+    display: none;
+}
+
+/* =================================== */
