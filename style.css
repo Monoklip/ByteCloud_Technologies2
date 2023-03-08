@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-p{
+.text{
+    display: flex;
+}
+.title{
     font-size: 20px;
 }
 .world {
@@ -41,10 +44,11 @@ p{
 .world-north_USA-devices {
     width: 150px;
     height: 150px;
-    top: 225px;
-    left: 225px;
+    top: 235px;
+    left: 205px;
     position: absolute;
     display: none;
+    z-index: 1;
 }
 
 .phone-north_USA {
@@ -90,27 +94,29 @@ p{
     left: 325px;
     position: absolute;
     display: none;
+    z-index: 1;
 }
 
 .phone-south_USA {
     position: absolute;
     height: 40px;
     left: 35px;
+    top: 10px;
     display: none;
 }
 
 .tablet-south_USA {
     position: absolute;
     height: 40px;
-    left: 55px;
-    bottom: 0;
+    left: 62px;
+    bottom: 0px;
     display: none;
 }
 
 .laptop-south_USA {
     position: absolute;
     height: 40px;
-    top: 50px;
+    top: 46px;
     left: 100px;
     display: none;
 }
@@ -140,8 +146,10 @@ p{
 .phone-Europe {
     position: absolute;
     height: 40px;
+    top: 20px;
     left: 165px;
     display: none;
+    z-index: 1;
 }
 
 .tablet-Europe {
@@ -149,14 +157,16 @@ p{
     height: 40px;
     bottom: 15px;
     display: none;
+    z-index: 1;
 }
 
 .laptop-Europe {
     position: absolute;
     height: 40px;
-    top: 55px;
-    left: 100px;
+    top: 60px;
+    left: 90px;
     display: none;
+    z-index: 1;
 }
 
 /* =====================================*/
@@ -187,6 +197,7 @@ p{
     left: 170px;
     top: 10px;
     display: none;
+    z-index: 1;
 }
 
 .tablet-Asia {
@@ -194,6 +205,7 @@ p{
     height: 40px;
     bottom: 0;
     display: none;
+    z-index: 1;
 }
 
 .laptop-Asia {
@@ -202,6 +214,7 @@ p{
     top: 90px;
     left: 120px;
     display: none;
+    z-index: 1;
 }
 
 /* =====================================*/
@@ -229,25 +242,28 @@ p{
 .phone-Australia {
     position: absolute;
     height: 40px;
-    left: 90px;
-    top: 38px;
+    left: 49px;
+    top: 36px;
     display: none;
+    z-index: 1;
 }
 
 .tablet-Australia {
     position: absolute;
     height: 40px;
     top: 40px;
-    left: 5px;
+    left: 0px;
     display: none;
+    z-index: 1;
 }
 
 .laptop-Australia {
     position: absolute;
     height: 40px;
-    top: 40px;
-    left: 47px;
+    top: 35px;
+    left: 100px;
     display: none;
+    z-index: 1;
 }
 
 /* =================================== */
@@ -261,6 +277,7 @@ p{
     top: 320px;
     left: 170px;
     display: none;
+    z-index: 1;
 }
 
 .ball-EastUSA {
@@ -268,6 +285,7 @@ p{
     top: 300px;
     left: 360px;
     display: none;
+    z-index: 1;
 }
 
 .ball-Germany {
@@ -275,13 +293,295 @@ p{
     top: 275px;
     left: 615px;
     display: none;
+    z-index: 1;
 }
 
 .ball-Singapore {
     position: absolute;
-    top: 485px;
-    left: 960px;
+    top: 487px;
+    left: 968px;
     display: none;
+    z-index: 1;
 }
 
 /* =================================== */
+
+.world-road{
+    position: absolute;
+}
+
+.road{
+    position: absolute;
+} 
+
+/* ============================================= */
+
+.singapore_oceania_phone{
+    display: none;
+}
+
+.singapore_oceania_tablet{
+    display: none;
+}
+
+.singapore_oceania_laptop{
+    display: none;
+}
+/*  */
+.singapore_asia_phone{
+    display: none;
+}
+
+.singapore_asia_tablet{
+    display: none;
+}
+
+.singapore_asia_laptop{
+    display: none;
+}
+/*  */
+.singapore_europe_phone{
+    display: none;
+}
+
+.singapore_europe_tablet{
+    display: none;
+}
+
+.singapore_europe_laptop{
+    display: none;
+}
+/*  */
+.singapore_north_america_phone{
+    display: none;
+}
+
+.singapore_north_america_tablet{
+    display: none;
+}
+
+.singapore_north_america_laptop{
+    display: none;
+}
+/*  */
+.singapore_south_america_phone{
+    display: none;
+}
+
+.singapore_south_america_tablet{
+    display: none;
+}
+
+.singapore_south_america_laptop{
+    display: none;
+}
+/* ============================== */
+.germany_europe_phone{
+    display: none;
+}
+
+.germany_europe_tablet{
+    display: none;
+}
+
+.germany_europe_laptop{
+    display: none;
+}
+/*  */
+.germany_asia_phone{
+    display: none;
+}
+
+.germany_asia_tablet{
+    display: none;
+}
+
+.germany_asia_laptop{
+    display: none;
+}
+/*  */
+.germany_oceania_phone{
+    display: none;
+}
+
+.germany_oceania_tablet{
+    display: none;
+}
+
+.germany_oceania_laptop{
+    display: none;
+}
+/*  */
+.germany_north_america_phone{
+    display: none;
+}
+
+.germany_north_america_tablet{
+    display: none;
+}
+
+.germany_north_america_laptop{
+    display: none;
+}
+/*  */
+.germany_south_america_phone{
+    display: none;
+}
+
+.germany_south_america_tablet{
+    display: none;
+}
+
+.germany_south_america_laptop{
+    display: none;
+}
+/* ======================================= */
+.east_usa_north_america_phone{
+    display: none;
+}
+
+.east_usa_north_america_tablet{
+    display: none;
+}
+
+.east_usa_north_america_laptop{
+    display: none;
+}
+/*  */
+.east_usa_south_america_phone{
+    display: none;
+}
+
+.east_usa_south_america_tablet{
+    display: none;
+}
+
+.east_usa_south_america_laptop{
+    display: none;
+}
+/*  */
+.east_usa_europe_phone{
+    display: none;
+}
+
+.east_usa_europe_tablet{
+    display: none;
+}
+
+.east_usa_europe_laptop{
+    display: none;
+}
+/*  */
+.east_usa_oceania_phone{
+    display: none;
+}
+
+.east_usa_oceania_tablet{
+    display: none;
+}
+
+.east_usa_oceania_laptop{
+    display: none;
+}
+/*  */
+.east_usa_asia_phone{
+    display: none;
+}
+
+.east_usa_asia_tablet{
+    display: none;
+}
+
+.east_usa_asia_laptop{
+    display: none;
+}
+
+/* ======================================= */
+.west_usa_south_america_phone{
+    display: none;
+}
+
+.west_usa_south_america_tablet{
+    display: none;
+}
+
+.west_usa_south_america_laptop{
+    display: none;
+}
+/*  */
+.west_usa_north_america_phone{
+    display: none;
+}
+
+.west_usa_north_america_tablet{
+    display: none;
+}
+
+.west_usa_north_america_laptop{
+    display: none;
+}
+/*  */
+.west_usa_europe_phone{
+    display: none;
+}
+
+.west_usa_europe_tablet{
+    display: none;
+}
+
+.west_usa_europe_laptop{
+    display: none;
+}
+/*  */
+.west_usa_oceania_phone{
+    display: none;
+}
+
+.west_usa_oceania_tablet{
+    display: none;
+}
+
+.west_usa_oceania_laptop{
+    display: none;
+}
+/*  */
+.west_usa_asia_phone{
+    display: none;
+}
+
+.west_usa_asia_tablet{
+    display: none;
+}
+
+.west_usa_asia_laptop{
+    display: none;
+}
+
+.btnNext{
+    border: none;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+    background: white;
+    display: none;
+    cursor: pointer;
+}
+.btnNext:hover{
+    color: rgb(0, 83, 0);
+    text-decoration: underline;    
+}
+
+.btnStart{
+    border: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    background: white;
+    display: none;
+    cursor: pointer;
+}
+.btnStart:hover{
+    color: brown;
+    text-decoration: underline;    
+}
