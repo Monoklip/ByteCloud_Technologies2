@@ -11,7 +11,7 @@ const tablet_north_USA = document.querySelector('.tablet-north_USA');
 const laptop_north_USA = document.querySelector('.laptop-north_USA');
 const worldNorth_USADevices = document.querySelector('.world-north_USA-devices');
 
-// people min
+// people north_USA
 
 man_empty_min_north_USA.addEventListener('mousemove', () => {
     man_empty_min_north_USA.src = './image/man_filled.png';
@@ -28,7 +28,7 @@ man_empty_max_north_USA.addEventListener('mousemove', () => {
     man_empty_max_north_USA.src = './image/man_filled.png';
 });
 
-// people mid
+// =====
 
 man_empty_min_north_USA.addEventListener('mouseleave', () => {
     man_empty_min_north_USA.src = './image/man_empty.png';
@@ -45,12 +45,13 @@ man_empty_max_north_USA.addEventListener('mouseleave', () => {
     man_empty_max_north_USA.src = './image/man_empty.png';
 });
 
-// people max
+// =====
 
 man_empty_min_north_USA.addEventListener('click', () => {
     worldNorth_USAPeoples.style.display = 'none';
     worldNorth_USADevices.style.display = 'block';
     phone_north_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -59,6 +60,7 @@ man_empty_mid_north_USA.addEventListener('click', () => {
     worldNorth_USADevices.style.display = 'block';
     phone_north_USA.style.display = 'block';
     tablet_north_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -68,6 +70,7 @@ man_empty_max_north_USA.addEventListener('click', () => {
     phone_north_USA.style.display = 'block';
     tablet_north_USA.style.display = 'block';
     laptop_north_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -83,7 +86,7 @@ const tablet_south_USA = document.querySelector('.tablet-south_USA');
 const laptop_south_USA = document.querySelector('.laptop-south_USA');
 const worldSouth_USADevices = document.querySelector('.world-south_USA-devices');
 
-// people min
+// people south_USA
 
 man_empty_min_south_USA.addEventListener('mousemove', () => {
     man_empty_min_south_USA.src = './image/man_filled.png';
@@ -100,7 +103,7 @@ man_empty_max_south_USA.addEventListener('mousemove', () => {
     man_empty_max_south_USA.src = './image/man_filled.png';
 });
 
-// people mid
+// =====
 
 man_empty_min_south_USA.addEventListener('mouseleave', () => {
     man_empty_min_south_USA.src = './image/man_empty.png';
@@ -117,12 +120,13 @@ man_empty_max_south_USA.addEventListener('mouseleave', () => {
     man_empty_max_south_USA.src = './image/man_empty.png';
 });
 
-// // people max
+// =====
 
 man_empty_min_south_USA.addEventListener('click', () => {
     worldSouth_USAPeoples.style.display = 'none';
     worldSouth_USADevices.style.display = 'block';
     phone_south_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -131,6 +135,7 @@ man_empty_mid_south_USA.addEventListener('click', () => {
     worldSouth_USADevices.style.display = 'block';
     phone_south_USA.style.display = 'block';
     tablet_south_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -140,6 +145,7 @@ man_empty_max_south_USA.addEventListener('click', () => {
     phone_south_USA.style.display = 'block';
     tablet_south_USA.style.display = 'block';
     laptop_south_USA.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -155,7 +161,7 @@ const tablet_Europe = document.querySelector('.tablet-Europe');
 const laptop_Europe = document.querySelector('.laptop-Europe');
 const worldEuropeDevices = document.querySelector('.world-Europe-devices');
 
-// people min
+// people Europe
 
 man_empty_min_Europe.addEventListener('mousemove', () => {
     man_empty_min_Europe.src = './image/man_filled.png';
@@ -172,7 +178,7 @@ man_empty_max_Europe.addEventListener('mousemove', () => {
     man_empty_max_Europe.src = './image/man_filled.png';
 });
 
-// people mid
+// =====
 
 man_empty_min_Europe.addEventListener('mouseleave', () => {
     man_empty_min_Europe.src = './image/man_empty.png';
@@ -189,12 +195,13 @@ man_empty_max_Europe.addEventListener('mouseleave', () => {
     man_empty_max_Europe.src = './image/man_empty.png';
 });
 
-// people max
+// =====
 
 man_empty_min_Europe.addEventListener('click', () => {
     worldEuropePeoples.style.display = 'none';
     worldEuropeDevices.style.display = 'block';
     phone_Europe.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -203,6 +210,7 @@ man_empty_mid_Europe.addEventListener('click', () => {
     worldEuropeDevices.style.display = 'block';
     phone_Europe.style.display = 'block';
     tablet_Europe.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -212,6 +220,7 @@ man_empty_max_Europe.addEventListener('click', () => {
     phone_Europe.style.display = 'block';
     tablet_Europe.style.display = 'block';
     laptop_Europe.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -227,7 +236,7 @@ const tablet_Asia = document.querySelector('.tablet-Asia');
 const laptop_Asia = document.querySelector('.laptop-Asia');
 const worldAsiaDevices = document.querySelector('.world-Asia-devices');
 
-// people min
+// people Asia
 
 man_empty_min_Asia.addEventListener('mousemove', () => {
     man_empty_min_Asia.src = './image/man_filled.png';
@@ -244,7 +253,7 @@ man_empty_max_Asia.addEventListener('mousemove', () => {
     man_empty_max_Asia.src = './image/man_filled.png';
 });
 
-// // people mid
+// =====
 
 man_empty_min_Asia.addEventListener('mouseleave', () => {
     man_empty_min_Asia.src = './image/man_empty.png';
@@ -261,12 +270,13 @@ man_empty_max_Asia.addEventListener('mouseleave', () => {
     man_empty_max_Asia.src = './image/man_empty.png';
 });
 
-// people max
+// =====
 
 man_empty_min_Asia.addEventListener('click', () => {
     worldAsiaPeoples.style.display = 'none';
     worldAsiaDevices.style.display = 'block';
     phone_Asia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -275,6 +285,7 @@ man_empty_mid_Asia.addEventListener('click', () => {
     worldAsiaDevices.style.display = 'block';
     phone_Asia.style.display = 'block';
     tablet_Asia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -284,7 +295,9 @@ man_empty_max_Asia.addEventListener('click', () => {
     phone_Asia.style.display = 'block';
     tablet_Asia.style.display = 'block';
     laptop_Asia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
+
 });
 
 // //=================== Australia Peoples ===================
@@ -299,7 +312,7 @@ const tablet_Australia = document.querySelector('.tablet-Australia');
 const laptop_Australia = document.querySelector('.laptop-Australia');
 const worldAustraliaDevices = document.querySelector('.world-Australia-devices');
 
-// people min
+// people Australia
 
 man_empty_min_Australia.addEventListener('mousemove', () => {
     man_empty_min_Australia.src = './image/man_filled.png';
@@ -316,7 +329,7 @@ man_empty_max_Australia.addEventListener('mousemove', () => {
     man_empty_max_Australia.src = './image/man_filled.png';
 });
 
-// people mid
+// =====
 
 man_empty_min_Australia.addEventListener('mouseleave', () => {
     man_empty_min_Australia.src = './image/man_empty.png';
@@ -333,12 +346,13 @@ man_empty_max_Australia.addEventListener('mouseleave', () => {
     man_empty_max_Australia.src = './image/man_empty.png';
 });
 
-// people max
+// =====
 
 man_empty_min_Australia.addEventListener('click', () => {
     worldAustraliaPeoples.style.display = 'none';
     worldAustraliaDevices.style.display = 'block';
     phone_Australia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -347,6 +361,7 @@ man_empty_mid_Australia.addEventListener('click', () => {
     worldAustraliaDevices.style.display = 'block';
     phone_Australia.style.display = 'block';
     tablet_Australia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -356,6 +371,7 @@ man_empty_max_Australia.addEventListener('click', () => {
     phone_Australia.style.display = 'block';
     tablet_Australia.style.display = 'block';
     laptop_Australia.style.display = 'block';
+    btnNext.style.display = 'block';
     auditClickAllBall();
 });
 
@@ -423,13 +439,15 @@ ball_Singapore.addEventListener('mouseleave', ballSingaporeMouseLeave);
 let clickNum = 0;
 
 let Germany, Singapore, WestUSA, EastUSA;
+let Germany_Main, Singapore_Main, WestUSA_Main, EastUSA_Main;
 
 // ========= Server West USA =========
 
 const west_USA_BallAudit = () => {
     if (clickNum === 0) {
         ball_WestUSA.src = './image/server.png';
-        ball_WestUSA.removeEventListener('click', west_USA_BallAudit)
+        ball_WestUSA.removeEventListener('click', west_USA_BallAudit);
+        WestUSA_Main = true;
     }
     else {
         ball_WestUSA.src = './image/server_ByteCloud.png';
@@ -439,7 +457,12 @@ const west_USA_BallAudit = () => {
     ball_WestUSA.removeEventListener('mouseleave', ballWestUSAMouseLeave);
     clickNum++;
     WestUSA = true;
+    btnStart.style.display = 'block';
     allRegionsClick();
+
+    if(clickNum > 2){
+        btnStart.disabled = false;
+    }
 };
 
 
@@ -450,7 +473,8 @@ ball_WestUSA.addEventListener('click', west_USA_BallAudit);
 const east_USA_BallAudit = () => {
     if (clickNum === 0) {
         ball_EastUSA.src = './image/server.png';
-        ball_EastUSA.removeEventListener('click', east_USA_BallAudit)
+        ball_EastUSA.removeEventListener('click', east_USA_BallAudit);
+        EastUSA_Main = true;
     }
     else {
         ball_EastUSA.src = './image/server_ByteCloud.png';
@@ -460,7 +484,12 @@ const east_USA_BallAudit = () => {
     ball_EastUSA.removeEventListener('mouseleave', ballEastUSAMouseLeave);
     clickNum++;
     EastUSA = true;
+    btnStart.style.display = 'block';
     allRegionsClick();
+
+    if(clickNum > 2){
+        btnStart.disabled = false;
+    }
 };
 
 ball_EastUSA.addEventListener('click', east_USA_BallAudit);
@@ -470,7 +499,8 @@ ball_EastUSA.addEventListener('click', east_USA_BallAudit);
 const germany_BallAudit = () => {
     if (clickNum === 0) {
         ball_Germany.src = './image/server.png';
-        ball_Germany.removeEventListener('click', germany_BallAudit)
+        ball_Germany.removeEventListener('click', germany_BallAudit);
+        Germany_Main = true;
     }
     else {
         ball_Germany.src = './image/server_ByteCloud.png';
@@ -480,7 +510,12 @@ const germany_BallAudit = () => {
     ball_Germany.removeEventListener('mouseleave', ballGermanyMouseLeave);
     clickNum++;
     Germany = true;
+    btnStart.style.display = 'block';
     allRegionsClick();
+
+    if(clickNum > 2){
+        btnStart.disabled = false;
+    }
 };
 
 ball_Germany.addEventListener('click', germany_BallAudit);
@@ -490,7 +525,8 @@ ball_Germany.addEventListener('click', germany_BallAudit);
 const singapore_BallAudit = () => {
     if (clickNum === 0) {
         ball_Singapore.src = './image/server.png';
-        ball_Singapore.removeEventListener('click', singapore_BallAudit)
+        ball_Singapore.removeEventListener('click', singapore_BallAudit);
+        Singapore_Main = true;
     }
     else {
         ball_Singapore.src = './image/server_ByteCloud.png';
@@ -500,7 +536,12 @@ const singapore_BallAudit = () => {
     ball_Singapore.removeEventListener('mouseleave', ballSingaporeMouseLeave);
     clickNum++;
     Singapore = true;
+    btnStart.style.display = 'block';
     allRegionsClick();
+
+    if(clickNum > 2){
+        btnStart.disabled = false;
+    }
 };
 
 ball_Singapore.addEventListener('click', singapore_BallAudit);
@@ -523,6 +564,8 @@ const auditClickAllBall = () => {
         worldAsiaPeoples.style.display === 'none' &&
         worldAustraliaPeoples.style.display === 'none') {
         openAllBall();
+        btnNext.style.display = 'none';
+        btnStart.style.display = 'block';
 
         title.textContent = 'Where is you data? Choose one spot Object Storage system';
     }
@@ -537,6 +580,12 @@ const allRegionsClick = () => {
         North_America_Audit_with_EastUSA();
         EuropeAudit_with_Gremany();
         AsiaAudit_with_Singapore();
+
+        btnStart.style.display = 'none';
+
+        setTimeout(()=>{
+            oneServer();
+        },5000);
     }
 };
 
@@ -559,6 +608,7 @@ const btnClickNext = () => {
         worldAustraliaPeoples.style.display = 'none';
 
         openAllBall();
+        btnNext.style.display = 'none';
     }
 };
 
@@ -597,6 +647,41 @@ const btnClickStart = () => {
         South_USA_Audit_with_West_USA();
         ball_Singapore.style.display = 'none';
     }
+
+    btnStart.style.display = 'none';
+
+    setTimeout(()=>{
+        oneServer();
+    },5000);
+
 };
 
 btnStart.addEventListener('click', btnClickStart);
+
+const roadAll = document.querySelectorAll('.road');
+const monitor = document.querySelectorAll('.monitor');
+
+const oneServer = async() => {
+    monitor.forEach(elem => {
+        elem.style.width = '0';
+        elem.style.transition = '0s';
+    });
+    roadAll.forEach(elem => {
+        elem.style.display = 'none';
+    });
+
+    setTimeout(()=>{
+        if(Singapore_Main){
+            on_server_Singapore();
+        }
+        else if(WestUSA_Main){
+            on_server_West_USA();
+        }
+        else if(EastUSA_Main){
+            on_server_East_USA();
+        }
+        else if(Germany_Main){
+            on_server_Germany();
+        }
+    },1000);
+};

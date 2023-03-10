@@ -562,7 +562,7 @@
     color: green;
     font-size: 20px;
     font-weight: bold;
-    margin: 0 20px;
+    margin-left: 20px;
     background: white;
     display: none;
     cursor: pointer;
@@ -577,6 +577,7 @@
     color: red;
     font-size: 20px;
     font-weight: bold;
+    margin-left: 20px;
     background: white;
     display: none;
     cursor: pointer;
@@ -585,3 +586,92 @@
     color: brown;
     text-decoration: underline;    
 }
+.btnStart:disabled{
+    color: grey;
+    text-decoration: none;
+}
+
+/* ======================================== */
+
+.monitor{
+    width: 0;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.monitor_europe_phone{
+    top: 238px;
+    left: 759px;
+}
+.monitor_europe_tablet{
+    top: 313px;
+    left: 591px;
+}
+.monitor_europe_laptop{
+    top: 278px;
+    left: 675px;
+}
+
+/*  */
+
+.monitor_north_america_phone{
+    top: 285px;
+    left: 218px;
+}
+.monitor_north_america_tablet{
+    top: 315px;
+    left: 265px;
+}
+.monitor_north_america_laptop{
+    top: 285px;
+    left: 309px;
+}
+
+/*  */
+
+.monitor_asia_phone{
+    top: 285px;
+    left: 1038px;
+}
+.monitor_asia_tablet{
+    top: 385px;
+    left: 865px;
+}
+.monitor_asia_laptop{
+    top: 365px;
+    left: 979px;
+}
+
+/*  */
+
+.monitor_south_america_phone{
+    top: 470px;
+    left: 373px;
+}
+.monitor_south_america_tablet{
+    top: 570px;
+    left: 397px;
+}
+.monitor_south_america_laptop{
+    top: 506px;
+    left: 429px;
+}
+
+/*  */
+
+.monitor_oceania_phone{
+    top: 561px;
+    left: 1062px;
+}
+.monitor_oceania_tablet{
+    top: 565px;
+    left: 1010px;
+}
+.monitor_oceania_laptop{
+    top: 560px;
+    left: 1104px;
+    /* transition: 1s ; */
+}
+
+/*  */
