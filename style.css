@@ -11,6 +11,7 @@
 .world {
     width: 1280px;
     height: 720px;
+    margin: 0 auto;
     background: url('./image/map.png');
     position: relative;
 }
@@ -671,7 +672,70 @@
 .monitor_oceania_laptop{
     top: 560px;
     left: 1104px;
-    /* transition: 1s ; */
 }
 
 /*  */
+
+.world-finish{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    left: 200px;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.world-finish-ByteCloud, .world-finish-ObjectStorage{
+    width: 48%;
+    height: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+.world-finish-ByteCloud_All{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid grey;
+    display: grid;
+    gap: 1px;
+    background: grey;
+    grid-template-areas:
+        "title title title"
+        "latency  time video";
+    display: none;
+}
+
+.world-finish-ByteCloud_All > div {
+    background: rgb(186 231 151);
+}
+
+.ByteCloud_title{
+    grid-area: title ;
+    background-color: #8ca0ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.ByteCloud-latency{
+    grid-area: latency ;
+    background-color: #8ca0ff;
+    padding: 5px;
+}
+
+.ByteCloud-time{
+    grid-area: time ;
+    background-color: #8ca0ff;
+    padding: 5px;
+}
+
+.ByteCloud-video{
+    grid-area: video ;
+    background-color: #8ca0ff;
+    padding: 5px;
+}

@@ -3,6 +3,18 @@ const monitor_south_america_phone = document.querySelector('.monitor_south_ameri
 const monitor_south_america_tablet = document.querySelector('.monitor_south_america_tablet');
 const monitor_south_america_laptop = document.querySelector('.monitor_south_america_laptop');
 
+const ByteCloudSouth_USA = document.getElementById('ByteCloud_South_USA');
+const starSouth_USAText = document.getElementById('star_South_USA');
+const latencySouth_USAText = document.getElementById('latency_South_USA');
+const timeSouth_USAText = document.getElementById('time_South_USA');
+const videoSouth_USAText = document.getElementById('video_South_USA');
+
+const ObjectStorageSouth_USA = document.getElementById('ObjectStorage_South_USA');
+const star_slowlySouth_USAText = document.getElementById('star_slowly_South_USA');
+const latency_slowlySouth_USAText = document.getElementById('latency_slowly_South_USA');
+const time_slowlySouth_USAText = document.getElementById('time_slowly_South_USA');
+const video_slowlySouth_USAText = document.getElementById('video_slowly_South_USA');
+
 const South_USA_Audit_with_West_USA = () =>{
     if( laptop_south_USA.style.display === 'block' ){
         west_usa_south_america_phone.style.display = 'block';
@@ -57,4 +69,51 @@ const South_USA_Audit_without_West_USA = () =>{
     monitor_south_america_phone.style.transition = '1810ms linear';
     monitor_south_america_tablet.style.transition = '1810ms linear';
     monitor_south_america_laptop.style.transition = '1810ms linear';
+};
+
+const South_USA_finally_with_West_USA = () => {
+    ByteCloudSouth_USA.style.display = 'grid';
+    starSouth_USAText.textContent = '★★★★★';
+    latencySouth_USAText.textContent = 73;
+    timeSouth_USAText.textContent = '1 sec';
+    videoSouth_USAText.textContent = '4K/2160p Ultra HD';
+};
+const South_USA_finally_without_West_USA = () => {
+    ByteCloudSouth_USA.style.display = 'grid';
+    starSouth_USAText.textContent = '★★★★★';
+    latencySouth_USAText.textContent = 73;
+    timeSouth_USAText.textContent = '10 sec';
+    videoSouth_USAText.textContent = '4K/2160p Ultra HD';
+};
+
+const South_USA_finally_only_Singapore = () => {
+    ObjectStorageSouth_USA.style.display = 'grid';
+    star_slowlySouth_USAText.textContent = '☆★★★★';
+    latency_slowlySouth_USAText.textContent = 149;
+    time_slowlySouth_USAText.textContent = '61 sec';
+    video_slowlySouth_USAText.textContent = '4K/2160p Ultra HD';
+};
+
+const South_USA_finally_only_Germany = () => {
+    ObjectStorageSouth_USA.style.display = 'grid';
+    star_slowlySouth_USAText.textContent = '☆★★★★';
+    latency_slowlySouth_USAText.textContent = 149;
+    time_slowlySouth_USAText.textContent = '610 sec';
+    video_slowlySouth_USAText.textContent = '4K/2160p Ultra HD';
+};
+
+const South_USA_finally_only_West_USA = () => {
+    ObjectStorageSouth_USA.style.display = 'grid';
+    star_slowlySouth_USAText.textContent = '☆★★★★';
+    latency_slowlySouth_USAText.textContent = 149;
+    time_slowlySouth_USAText.textContent = '61000 sec';
+    video_slowlySouth_USAText.textContent = '4K/2160p Ultra HD';
+};
+
+const South_USA_finally_only_East_USA = () => {
+    ObjectStorageSouth_USA.style.display = 'grid';
+    star_slowlySouth_USAText.textContent = '☆★★★★';
+    latency_slowlySouth_USAText.textContent = 149;
+    time_slowlySouth_USAText.textContent = '6100 sec';
+    video_slowlySouth_USAText.textContent = '4K/2160p Ultra HD';
 };

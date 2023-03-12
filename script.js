@@ -1,4 +1,6 @@
 
+let Asia, Europe, Oceania, North_USA, South_USA;
+
 //=================== North USA Peoples ===================
 
 const man_empty_min_north_USA = document.querySelector('.man_empty_min-north_USA');
@@ -53,6 +55,7 @@ man_empty_min_north_USA.addEventListener('click', () => {
     phone_north_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    North_USA = true;
 });
 
 man_empty_mid_north_USA.addEventListener('click', () => {
@@ -62,6 +65,7 @@ man_empty_mid_north_USA.addEventListener('click', () => {
     tablet_north_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    North_USA = true;
 });
 
 man_empty_max_north_USA.addEventListener('click', () => {
@@ -72,6 +76,7 @@ man_empty_max_north_USA.addEventListener('click', () => {
     laptop_north_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    North_USA = true;
 });
 
 //=================== South USA Peoples ===================
@@ -128,6 +133,7 @@ man_empty_min_south_USA.addEventListener('click', () => {
     phone_south_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    South_USA = true;
 });
 
 man_empty_mid_south_USA.addEventListener('click', () => {
@@ -137,6 +143,7 @@ man_empty_mid_south_USA.addEventListener('click', () => {
     tablet_south_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    South_USA = true;
 });
 
 man_empty_max_south_USA.addEventListener('click', () => {
@@ -147,6 +154,7 @@ man_empty_max_south_USA.addEventListener('click', () => {
     laptop_south_USA.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    South_USA = true;
 });
 
 //=================== Europe Peoples ===================
@@ -203,6 +211,7 @@ man_empty_min_Europe.addEventListener('click', () => {
     phone_Europe.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Europe = true;
 });
 
 man_empty_mid_Europe.addEventListener('click', () => {
@@ -212,6 +221,7 @@ man_empty_mid_Europe.addEventListener('click', () => {
     tablet_Europe.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Europe = true;
 });
 
 man_empty_max_Europe.addEventListener('click', () => {
@@ -222,6 +232,7 @@ man_empty_max_Europe.addEventListener('click', () => {
     laptop_Europe.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Europe = true;
 });
 
 //=================== Asia Peoples ===================
@@ -278,6 +289,7 @@ man_empty_min_Asia.addEventListener('click', () => {
     phone_Asia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Asia = true;
 });
 
 man_empty_mid_Asia.addEventListener('click', () => {
@@ -287,6 +299,7 @@ man_empty_mid_Asia.addEventListener('click', () => {
     tablet_Asia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Asia = true;
 });
 
 man_empty_max_Asia.addEventListener('click', () => {
@@ -297,6 +310,7 @@ man_empty_max_Asia.addEventListener('click', () => {
     laptop_Asia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Asia = true;
 
 });
 
@@ -354,6 +368,7 @@ man_empty_min_Australia.addEventListener('click', () => {
     phone_Australia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Oceania = true;
 });
 
 man_empty_mid_Australia.addEventListener('click', () => {
@@ -363,6 +378,7 @@ man_empty_mid_Australia.addEventListener('click', () => {
     tablet_Australia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Oceania = true;
 });
 
 man_empty_max_Australia.addEventListener('click', () => {
@@ -373,6 +389,7 @@ man_empty_max_Australia.addEventListener('click', () => {
     laptop_Australia.style.display = 'block';
     btnNext.style.display = 'block';
     auditClickAllBall();
+    Oceania = true;
 });
 
 // //=================== Ball ===================
@@ -669,19 +686,146 @@ const oneServer = async() => {
     roadAll.forEach(elem => {
         elem.style.display = 'none';
     });
+    ball_Germany.style.display = 'none';
+    ball_Singapore.style.display = 'none';
+    ball_WestUSA.style.display = 'none';
+    ball_EastUSA.style.display = 'none';
 
     setTimeout(()=>{
         if(Singapore_Main){
+            ball_Singapore.style.display = 'block';
             on_server_Singapore();
         }
         else if(WestUSA_Main){
+            ball_WestUSA.style.display = 'block';
             on_server_West_USA();
         }
         else if(EastUSA_Main){
+            ball_EastUSA.style.display = 'block';
             on_server_East_USA();
         }
         else if(Germany_Main){
+            ball_Germany.style.display = 'block';
             on_server_Germany();
         }
-    },1000);
+        finish();
+    },10);
+};
+
+const map = document.querySelector('.world-map');
+const finishDislpay = document.querySelector('.world-finish');
+
+const finish = () => {
+    setTimeout(()=>{
+        map.style.display = 'none';
+        finishDislpay.style.display = 'flex';
+
+        if(North_USA){
+            if(EastUSA){
+                North_USA_finally_with_East_USA();
+            }
+            else{
+                North_USA_finally_without_East_USA();
+            }
+            // 
+            if(Singapore_Main){
+                North_USA_finally_only_Singapore();
+            }
+            else if(Germany_Main){
+                North_USA_finally_only_Germany()
+            }
+            else if(WestUSA_Main){
+                North_USA_finally_only_West_USA();
+            }
+            else if(EastUSA_Main){
+                North_USA_finally_only_East_USA();
+            }
+        }
+        if(South_USA){
+            if(WestUSA){
+                South_USA_finally_with_West_USA();
+            }
+            else{
+                South_USA_finally_without_West_USA();
+            }
+            // 
+            if(Singapore_Main){
+                South_USA_finally_only_Singapore();
+            }
+            else if(Germany_Main){
+                South_USA_finally_only_Germany()
+            }
+            else if(WestUSA_Main){
+                South_USA_finally_only_West_USA();
+            }
+            else if(EastUSA_Main){
+                South_USA_finally_only_East_USA();
+            }
+        }
+        if(Europe){
+            if(Germany){
+                Europe_finally_with_Germany();
+            }
+            else{
+                Europe_finally_without_Germany();
+            }
+            // 
+            if(Singapore_Main){
+                Europe_finally_only_Singapore();
+            }
+            else if(Germany_Main){
+                Europe_finally_only_Germany()
+            }
+            else if(WestUSA_Main){
+                Europe_finally_only_West_USA();
+            }
+            else if(EastUSA_Main){
+                Europe_finally_only_East_USA();
+            }
+        }
+        if(Asia){
+            if(Singapore){
+                Asia_finally_with_Singapore();
+            }
+            else{
+                Asia_finally_without_Singapore();
+            }
+            // 
+            if(Singapore_Main){
+                Asia_finally_only_Singapore();
+            }
+            else if(Germany_Main){
+                Asia_finally_only_Germany()
+            }
+            else if(WestUSA_Main){
+                Asia_finally_only_West_USA();
+            }
+            else if(EastUSA_Main){
+                Asia_finally_only_East_USA();
+            }
+        }
+        if(Oceania){
+            if(Singapore){
+                Oceania_finally_with_Singapore();
+            }
+            else{
+                Oceania_finally_without_Singapore();
+            }
+            // 
+            if(Singapore_Main){
+                Oceania_finally_only_Singapore();
+            }
+            else if(Germany_Main){
+                Oceania_finally_only_Germany()
+            }
+            else if(WestUSA_Main){
+                Oceania_finally_only_West_USA();
+            }
+            else if(EastUSA_Main){
+                Oceania_finally_only_East_USA();
+            }
+        }
+
+        title.textContent = 'Do you want to ';
+    },3000)
 };
