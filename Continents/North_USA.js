@@ -50,7 +50,6 @@ const North_America_Audit_with_EastUSA = () =>{
     monitor_north_america_tablet.style.transition = '480ms linear';
     monitor_north_america_laptop.style.transition = '480ms linear';
 
-    text_North_USA.style.display = 'block';
     text_North_USA.textContent = 'latency: 48';
 
     setTimeout(()=>{
