@@ -475,9 +475,10 @@ const west_USA_BallAudit = () => {
     clickNum++;
     WestUSA = true;
     btnStart.style.display = 'block';
+    title.textContent = 'Choose minimum two additional spots for ByteCloud and press';
     allRegionsClick();
 
-    if(clickNum > 2){
+    if (clickNum > 2) {
         btnStart.disabled = false;
     }
 };
@@ -502,9 +503,11 @@ const east_USA_BallAudit = () => {
     clickNum++;
     EastUSA = true;
     btnStart.style.display = 'block';
+    title.textContent = 'Choose minimum two additional spots for ByteCloud and press';
     allRegionsClick();
 
-    if(clickNum > 2){
+
+    if (clickNum > 2) {
         btnStart.disabled = false;
     }
 };
@@ -528,9 +531,10 @@ const germany_BallAudit = () => {
     clickNum++;
     Germany = true;
     btnStart.style.display = 'block';
+    title.textContent = 'Choose minimum two additional spots for ByteCloud and press';
     allRegionsClick();
 
-    if(clickNum > 2){
+    if (clickNum > 2) {
         btnStart.disabled = false;
     }
 };
@@ -554,9 +558,10 @@ const singapore_BallAudit = () => {
     clickNum++;
     Singapore = true;
     btnStart.style.display = 'block';
+    title.textContent = 'Choose minimum two additional spots for ByteCloud and press';
     allRegionsClick();
 
-    if(clickNum > 2){
+    if (clickNum > 2) {
         btnStart.disabled = false;
     }
 };
@@ -582,7 +587,6 @@ const auditClickAllBall = () => {
         worldAustraliaPeoples.style.display === 'none') {
         openAllBall();
         btnNext.style.display = 'none';
-        btnStart.style.display = 'block';
 
         title.textContent = 'Where is you data? Choose one spot Object Storage system';
     }
@@ -599,10 +603,11 @@ const allRegionsClick = () => {
         AsiaAudit_with_Singapore();
 
         btnStart.style.display = 'none';
+        title.style.opacity = '0';
 
-        setTimeout(()=>{
+        setTimeout(() => {
             oneServer();
-        },5000);
+        }, 5000);
     }
 };
 
@@ -612,11 +617,11 @@ const btnNext = document.querySelector('.btnNext');
 const btnStart = document.querySelector('.btnStart');
 
 const btnClickNext = () => {
-    if( worldNorth_USADevices.style.display === 'block' ||
+    if (worldNorth_USADevices.style.display === 'block' ||
         worldSouth_USADevices.style.display === 'block' ||
         worldAsiaDevices.style.display === 'block' ||
         worldAustraliaDevices.style.display === 'block' ||
-        worldEuropeDevices.style.display === 'block' ){
+        worldEuropeDevices.style.display === 'block') {
 
         worldAsiaPeoples.style.display = 'none';
         worldEuropePeoples.style.display = 'none';
@@ -666,11 +671,11 @@ const btnClickStart = () => {
     }
 
     btnStart.style.display = 'none';
+    title.style.opacity = '0';
 
-    setTimeout(()=>{
+    setTimeout(() => {
         oneServer();
-    },5000);
-
+    }, 5000);
 };
 
 btnStart.addEventListener('click', btnClickStart);
@@ -678,7 +683,7 @@ btnStart.addEventListener('click', btnClickStart);
 const roadAll = document.querySelectorAll('.road');
 const monitor = document.querySelectorAll('.monitor');
 
-const oneServer = async() => {
+const oneServer = async () => {
     monitor.forEach(elem => {
         elem.style.width = '0';
         elem.style.transition = '0s';
@@ -691,141 +696,143 @@ const oneServer = async() => {
     ball_WestUSA.style.display = 'none';
     ball_EastUSA.style.display = 'none';
 
-    setTimeout(()=>{
-        if(Singapore_Main){
+    setTimeout(() => {
+        if (Singapore_Main) {
             ball_Singapore.style.display = 'block';
             on_server_Singapore();
         }
-        else if(WestUSA_Main){
+        else if (WestUSA_Main) {
             ball_WestUSA.style.display = 'block';
             on_server_West_USA();
         }
-        else if(EastUSA_Main){
+        else if (EastUSA_Main) {
             ball_EastUSA.style.display = 'block';
             on_server_East_USA();
         }
-        else if(Germany_Main){
+        else if (Germany_Main) {
             ball_Germany.style.display = 'block';
             on_server_Germany();
         }
         finish();
-    },10);
+    }, 100);
 };
 
 const map = document.querySelector('.world-map');
 const finishDislpay = document.querySelector('.world-finish');
+const btnReload = document.querySelector('.btnReload');
 
 const finish = () => {
-    setTimeout(()=>{
+    setTimeout(() => {
         map.style.display = 'none';
         finishDislpay.style.display = 'flex';
 
-        if(North_USA){
-            if(EastUSA){
+        if (North_USA) {
+            if (EastUSA) {
                 North_USA_finally_with_East_USA();
             }
-            else{
+            else {
                 North_USA_finally_without_East_USA();
             }
             // 
-            if(Singapore_Main){
+            if (Singapore_Main) {
                 North_USA_finally_only_Singapore();
             }
-            else if(Germany_Main){
+            else if (Germany_Main) {
                 North_USA_finally_only_Germany()
             }
-            else if(WestUSA_Main){
+            else if (WestUSA_Main) {
                 North_USA_finally_only_West_USA();
             }
-            else if(EastUSA_Main){
+            else if (EastUSA_Main) {
                 North_USA_finally_only_East_USA();
             }
         }
-        if(South_USA){
-            if(WestUSA){
+        if (South_USA) {
+            if (WestUSA) {
                 South_USA_finally_with_West_USA();
             }
-            else{
+            else {
                 South_USA_finally_without_West_USA();
             }
             // 
-            if(Singapore_Main){
+            if (Singapore_Main) {
                 South_USA_finally_only_Singapore();
             }
-            else if(Germany_Main){
+            else if (Germany_Main) {
                 South_USA_finally_only_Germany()
             }
-            else if(WestUSA_Main){
+            else if (WestUSA_Main) {
                 South_USA_finally_only_West_USA();
             }
-            else if(EastUSA_Main){
+            else if (EastUSA_Main) {
                 South_USA_finally_only_East_USA();
             }
         }
-        if(Europe){
-            if(Germany){
+        if (Europe) {
+            if (Germany) {
                 Europe_finally_with_Germany();
             }
-            else{
+            else {
                 Europe_finally_without_Germany();
             }
             // 
-            if(Singapore_Main){
+            if (Singapore_Main) {
                 Europe_finally_only_Singapore();
             }
-            else if(Germany_Main){
+            else if (Germany_Main) {
                 Europe_finally_only_Germany()
             }
-            else if(WestUSA_Main){
+            else if (WestUSA_Main) {
                 Europe_finally_only_West_USA();
             }
-            else if(EastUSA_Main){
+            else if (EastUSA_Main) {
                 Europe_finally_only_East_USA();
             }
         }
-        if(Asia){
-            if(Singapore){
+        if (Asia) {
+            if (Singapore) {
                 Asia_finally_with_Singapore();
             }
-            else{
+            else {
                 Asia_finally_without_Singapore();
             }
             // 
-            if(Singapore_Main){
+            if (Singapore_Main) {
                 Asia_finally_only_Singapore();
             }
-            else if(Germany_Main){
+            else if (Germany_Main) {
                 Asia_finally_only_Germany()
             }
-            else if(WestUSA_Main){
+            else if (WestUSA_Main) {
                 Asia_finally_only_West_USA();
             }
-            else if(EastUSA_Main){
+            else if (EastUSA_Main) {
                 Asia_finally_only_East_USA();
             }
         }
-        if(Oceania){
-            if(Singapore){
+        if (Oceania) {
+            if (Singapore) {
                 Oceania_finally_with_Singapore();
             }
-            else{
+            else {
                 Oceania_finally_without_Singapore();
             }
             // 
-            if(Singapore_Main){
+            if (Singapore_Main) {
                 Oceania_finally_only_Singapore();
             }
-            else if(Germany_Main){
+            else if (Germany_Main) {
                 Oceania_finally_only_Germany()
             }
-            else if(WestUSA_Main){
+            else if (WestUSA_Main) {
                 Oceania_finally_only_West_USA();
             }
-            else if(EastUSA_Main){
+            else if (EastUSA_Main) {
                 Oceania_finally_only_East_USA();
             }
         }
-
+        title.style.opacity = '1';
         title.textContent = 'Do you want to ';
-    },3000)
+        btnReload.style.display = 'block';
+    }, 5000)
 };

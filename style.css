@@ -591,7 +591,20 @@
     color: grey;
     text-decoration: none;
 }
-
+.btnReload{
+    border: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    background: white;
+    display: none;
+    cursor: pointer;
+}
+.btnReload:hover{
+    color: rgb(97, 2, 97);
+    text-decoration: underline;    
+}
 /* ======================================== */
 
 .monitor{
@@ -738,4 +751,34 @@ h2{
     grid-area: video ;
     background-color: #8ca0ff;
     padding: 5px;
+}
+
+.text_North_USA, .text_South_USA, .text_Europe, .text_Asia, .text_Oceania {
+    position: absolute;
+    display: none;
+}
+
+.text_North_USA{
+    top: 255px;
+    left: 250px;
+}
+.text_South_USA{
+    top: 545px;
+    left: 370px;
+}
+.text_Europe{
+    top: 325px;
+    left: 715px;
+}
+.text_Asia{
+    top: 350px;
+    left: 900px;
+}
+.text_Oceania{
+    top: 540px;
+    left: 1045px;
+}
+
+.latency_time{
+    display: none;
 }
