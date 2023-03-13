@@ -31,6 +31,12 @@ const on_server_Singapore = () => {
             monitor_oceania_phone.style.width = '28px';
             monitor_oceania_tablet.style.width = '30px';
             monitor_oceania_laptop.style.width = '36px';
+
+            text_Oceania.textContent = 'latency: 92';
+
+            setTimeout(()=>{
+                text_Oceania.textContent = 'time: 9 sec';
+            },920);
         }
         else if( tablet_Australia.style.display === 'block' ){
             singapore_oceania_phone.style.display = 'block';
@@ -38,11 +44,23 @@ const on_server_Singapore = () => {
     
             monitor_oceania_phone.style.width = '28px';
             monitor_oceania_tablet.style.width = '30px';
+
+            text_Oceania.textContent = 'latency: 92';
+
+            setTimeout(()=>{
+                text_Oceania.textContent = 'time: 9 sec';
+            },920);
         }
         else if( phone_Australia.style.display === 'block' ){
             singapore_oceania_phone.style.display = 'block';
     
             monitor_oceania_phone.style.width = '28px';
+
+            text_Oceania.textContent = 'latency: 92';
+
+            setTimeout(()=>{
+                text_Oceania.textContent = 'time: 9 sec';
+            },920);
         };
         
         monitor_oceania_phone.style.transition = '920ms linear';
@@ -59,6 +77,12 @@ const on_server_Singapore = () => {
             monitor_europe_phone.style.width = '28px';
             monitor_europe_tablet.style.width = '30px';
             monitor_europe_laptop.style.width = '36px';
+
+            text_Europe.textContent = 'latency: 250';
+
+            setTimeout(()=>{
+                text_Europe.textContent = 'time: 25 sec';
+            },2500);
         }
         else if( tablet_Europe.style.display === 'block' ){
             singapore_europe_phone.style.display = 'block';
@@ -66,11 +90,23 @@ const on_server_Singapore = () => {
     
             monitor_europe_phone.style.width = '28px';
             monitor_europe_tablet.style.width = '30px';
+
+            text_Europe.textContent = 'latency: 250';
+
+            setTimeout(()=>{
+                text_Europe.textContent = 'time: 25 sec';
+            },2500);
         }
         else if( phone_Europe.style.display === 'block' ){
             singapore_europe_phone.style.display = 'block';
     
             monitor_europe_phone.style.width = '28px';
+
+            text_Europe.textContent = 'latency: 250';
+
+            setTimeout(()=>{
+                text_Europe.textContent = 'time: 25 sec';
+            },2500);
         };
         
         monitor_europe_phone.style.transition = '2500ms linear';
@@ -87,6 +123,12 @@ const on_server_Singapore = () => {
             monitor_asia_phone.style.width = '28px';
             monitor_asia_tablet.style.width = '30px';
             monitor_asia_laptop.style.width = '36px';
+
+            text_Asia.textContent = 'latency: 70';
+
+            setTimeout(()=>{
+                text_Asia.textContent = 'time: 7 sec';
+            },700);
         }
         else if( tablet_Asia.style.display === 'block' ){
             singapore_asia_phone.style.display = 'block';
@@ -94,11 +136,23 @@ const on_server_Singapore = () => {
     
             monitor_asia_phone.style.width = '28px';
             monitor_asia_tablet.style.width = '30px';
+
+            text_Asia.textContent = 'latency: 70';
+
+            setTimeout(()=>{
+                text_Asia.textContent = 'time: 7 sec';
+            },700);
         }
         else if( phone_Asia.style.display === 'block' ){
             singapore_asia_phone.style.display = 'block';
     
             monitor_asia_phone.style.width = '28px';
+
+            text_Asia.textContent = 'latency: 70';
+
+            setTimeout(()=>{
+                text_Asia.textContent = 'time: 7 sec';
+            },700);
         };
         
         monitor_asia_phone.style.transition = '700ms linear';
@@ -115,6 +169,12 @@ const on_server_Singapore = () => {
             monitor_north_america_phone.style.width = '28px';
             monitor_north_america_tablet.style.width = '30px';
             monitor_north_america_laptop.style.width = '36px';
+
+            text_North_USA.textContent = 'latency: 204';
+
+            setTimeout(()=>{
+                text_North_USA.textContent = 'time: 20 sec';
+            },2040);
         }
         else if( tablet_north_USA.style.display === 'block' ){
             singapore_north_america_phone.style.display = 'block';
@@ -122,11 +182,23 @@ const on_server_Singapore = () => {
     
             monitor_north_america_phone.style.width = '28px';
             monitor_north_america_tablet.style.width = '30px';
+
+            text_North_USA.textContent = 'latency: 204';
+
+            setTimeout(()=>{
+                text_North_USA.textContent = 'time: 20 sec';
+            },2040);
         }
         else if( phone_north_USA.style.display === 'block' ){
             singapore_north_america_phone.style.display = 'block';
     
             monitor_north_america_phone.style.width = '28px';
+
+            text_North_USA.textContent = 'latency: 204';
+
+            setTimeout(()=>{
+                text_North_USA.textContent = 'time: 20 sec';
+            },2040);
         };
         
         monitor_north_america_phone.style.transition = '2040ms linear';
@@ -143,6 +215,12 @@ const on_server_Singapore = () => {
             monitor_south_america_phone.style.width = '28px';
             monitor_south_america_tablet.style.width = '30px';
             monitor_south_america_laptop.style.width = '36px';
+
+            text_South_USA.textContent = 'latency: 367';
+
+            setTimeout(()=>{
+                text_South_USA.textContent = 'time: 36 sec';
+            }, 3670);
         }
         else if( tablet_south_USA.style.display === 'block' ){
             singapore_south_america_phone.style.display = 'block';
@@ -150,11 +228,23 @@ const on_server_Singapore = () => {
     
             monitor_south_america_phone.style.width = '28px';
             monitor_south_america_tablet.style.width = '30px';
+
+            text_South_USA.textContent = 'latency: 367';
+
+            setTimeout(()=>{
+                text_South_USA.textContent = 'time: 36 sec';
+            }, 3670);
         }
         else if( phone_south_USA.style.display === 'block' ){
             singapore_south_america_phone.style.display = 'block';
     
             monitor_south_america_phone.style.width = '28px';
+
+            text_South_USA.textContent = 'latency: 367';
+
+            setTimeout(()=>{
+                text_South_USA.textContent = 'time: 36 sec';
+            }, 3670);
         };
         
         monitor_south_america_phone.style.transition = '3670ms linear';
